@@ -715,7 +715,8 @@ export interface RuleListenerExtension {
 
 export type RuleListener = RuleListenerBaseSelectors &
   RuleListenerCatchAllBaseCase &
-  RuleListenerExitSelectors;
+  RuleListenerExitSelectors &
+  RuleListenerExtension;
 
 export interface RuleModule<
   MessageIds extends string,
